@@ -695,9 +695,14 @@
   border-radius: 50%;
   width: 80%;
   margin: auto;
+  position: relative;
+  padding-top: 80%;
 }
 #about-employees .img-box img {
-  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
   transition: 0.2s ease-in-out;
   -o-object-fit: cover;
@@ -758,9 +763,6 @@
   }
   #about-employees .section-title {
     font-size: 25px;
-  }
-  #about-employees .img-box img {
-    height: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
