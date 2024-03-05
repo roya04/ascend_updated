@@ -497,6 +497,18 @@
   }
 }
 @media (min-width: 577px) and (max-width: 991px) {
+  #home-about h3 {
+    text-align: center;
+  }
+  #home-about p {
+    width: 100%;
+  }
+  #home-about .order1 {
+    order: 1;
+  }
+  #home-about .order2 {
+    order: 2;
+  }
   #home-selected-projects .section-title {
     font-size: 35px;
   }
