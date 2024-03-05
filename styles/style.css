@@ -807,9 +807,6 @@
     font-size: 18px;
     width: 100%;
   }
-  #about-employees .img-box img {
-    height: 250px;
-  }
 }
 @media (min-width: 540px) {
   .initial {
