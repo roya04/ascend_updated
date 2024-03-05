@@ -51,21 +51,31 @@
 #home-about {
   padding-top: 100px;
 }
-#home-about .orange-box {
+#home-about .bg-orange-img {
   position: relative;
-  height: 494px;
-  width: 40%;
-  background-color: rgb(235, 129, 55);
 }
-#home-about .orange-box img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 225%;
-  max-width: none;
+#home-about .bg-orange-img img {
+  width: 90%;
   height: 376px;
+  z-index: 2;
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
+  display: block;
+}
+#home-about .bg-orange-img::before {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 483px;
+  background-color: rgb(235, 129, 55);
+  position: absolute;
+  z-index: 1;
+}
+#home-about .bg-orange-img::before {
+  top: -14%;
+  left: 5%;
 }
 #home-about h3 {
   color: rgb(173, 18, 38);
@@ -412,17 +422,14 @@
   #home-about {
     padding-top: 50px;
   }
-  #home-about .orange-box {
-    height: 260px;
-    width: 40%;
-    background-color: rgb(235, 129, 55);
-  }
-  #home-about .orange-box img {
-    width: 250%;
-    max-width: none;
+  #home-about .bg-orange-img img {
     height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  }
+  #home-about .bg-orange-img::before {
+    height: 257px;
+    background-color: rgb(235, 129, 55);
+    position: absolute;
+    z-index: 1;
   }
   #home-about h3 {
     font-size: 35px;
@@ -437,6 +444,9 @@
   }
   #home-about .order2 {
     order: 2;
+  }
+  #home-about .order3 {
+    order: 3;
   }
   #home-products .section-title {
     font-size: 35px;
@@ -498,11 +508,25 @@
   }
 }
 @media (min-width: 577px) and (max-width: 991px) {
+  #home-about {
+    padding-top: 50px;
+  }
+  #home-about .bg-orange-img img {
+    height: 250px;
+  }
+  #home-about .bg-orange-img::before {
+    height: 323px;
+    background-color: rgb(235, 129, 55);
+    position: absolute;
+    z-index: 1;
+  }
   #home-about h3 {
+    font-size: 35px;
     text-align: center;
   }
   #home-about p {
     width: 100%;
+    font-size: 15px;
   }
   #home-about .order1 {
     order: 1;

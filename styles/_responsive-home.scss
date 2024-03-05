@@ -12,15 +12,15 @@
   }
   #home-about {
     padding-top: 50px;
-    .orange-box {
-      height: 260px;
-      width: 40%;
-      background-color: rgba(235, 129, 55, 1);
-      img {
-        width: 250%;
-        max-width: none;
+    .bg-orange-img{
+      img{
         height: 200px;
-        object-fit: cover;
+      }
+      &::before {
+        height: 257px;
+        background-color: rgba(235, 129, 55, 1);
+        position: absolute;
+        z-index: 1;
       }
     }
     h3 {
@@ -36,6 +36,9 @@
     }
     .order2 {
       order: 2;
+    }
+    .order3 {
+      order: 3;
     }
   }
   #home-products {
@@ -116,11 +119,25 @@
 
 @media (min-width: 577px) and (max-width: 991px) {
   #home-about {
+    padding-top: 50px;
+    .bg-orange-img{
+      img{
+          height: 250px;
+      }
+      &::before {
+        height: 323px;
+        background-color: rgba(235, 129, 55, 1);
+        position: absolute;
+        z-index: 1;
+      }
+    }
     h3 {
+      font-size: 35px;
       text-align: center;
     }
     p {
       width: 100%;
+      font-size: 15px;
     }
     .order1 {
       order: 1;
