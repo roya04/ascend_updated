@@ -430,6 +430,7 @@
   }
   #home-about p {
     width: 100%;
+    font-size: 15px;
   }
   #home-about .order1 {
     order: 1;
