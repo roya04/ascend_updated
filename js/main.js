@@ -248,11 +248,25 @@ window.addEventListener("scroll", function () {
 
 // layout 
 document.addEventListener('DOMContentLoaded', function () {
+  const menuIcon = document.getElementById('menuIcon');
+  const menuClose = document.getElementById('menuClose');
   const bottomOverlay = document.getElementById('bottom-overlay');
   const sideMenu = document.getElementById('menu');
+  const body = document.body;
+
+  menuIcon.addEventListener('click', function () {
+    body.style.overflow = 'hidden'; 
+  });
+
+  menuClose.addEventListener('click', function () {
+    body.style.overflow = 'auto'; 
+  });
 
   bottomOverlay.addEventListener('click', function () {
-      sideMenu.classList.remove('active');
-      bottomOverlay.classList.remove('active');
+    sideMenu.classList.remove('active');
+    bottomOverlay.classList.remove('active');
+    body.style.overflow = 'auto'; 
   });
 });
+
+
