@@ -104,8 +104,7 @@
 }
 
 #home-products {
-  padding-top: 100px;
-  height: 80vh;
+  padding: 100px 0px;
 }
 #home-products .section-title {
   text-align: center;
@@ -181,9 +180,6 @@
   right: 30px;
 }
 
-#home-selected-projects {
-  padding-top: 100px;
-}
 #home-selected-projects .section-title {
   text-align: center;
   font-weight: 500;
@@ -262,7 +258,7 @@
 }
 
 #home-featured-reels {
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 #home-featured-reels .section-title {
   padding-bottom: 40px;
@@ -354,7 +350,7 @@
 }
 
 #home-partners {
-  padding: 100px 0px;
+  padding-bottom: 50px;
 }
 #home-partners .section-title {
   text-align: center;
@@ -492,6 +488,9 @@
   #home-about .order2 {
     order: 2;
   }
+  #home-products {
+    padding: 100px 0px 50px 0px;
+  }
   #home-products .section-title {
     font-size: 35px;
   }
@@ -503,6 +502,7 @@
     left: 8%;
   }
   #home-selected-projects .section-title {
+    padding-bottom: 20px;
     font-size: 30px;
   }
   #home-selected-projects .section-title:after {
@@ -519,9 +519,6 @@
   }
   #home-selected-projects .swiper .swiper-wrapper .swiper-slide .top {
     display: none;
-  }
-  #home-partners {
-    padding-top: 0;
   }
   #home-partners .section-title {
     font-size: 30px;
@@ -582,6 +579,7 @@
     order: 2;
   }
   #home-selected-projects .section-title {
+    padding-bottom: 20px;
     font-size: 30px;
   }
   #home-selected-projects .section-title:after {
