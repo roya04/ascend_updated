@@ -211,19 +211,24 @@ window.addEventListener("DOMContentLoaded", function (event) {
 });
 
 //layout.js
-
 const closeBtn = document.getElementById("menuClose");
 const menuBtn = document.getElementById("menuIcon");
 const menu = document.getElementById("menu");
 const bottom_overlay = document.getElementById("bottom-overlay");
+const body = document.body;
+
 menuBtn.addEventListener("click", function () {
   menu.classList.add("active");
   bottom_overlay.classList.add("active");
+  body.style.overflow = 'hidden'; 
 });
+
 closeBtn.addEventListener("click", function () {
   menu.classList.remove("active");
   bottom_overlay.classList.remove("active");
+  body.style.overflow = 'auto'; 
 });
+
 function toggleList(listId) {
   var list = document.getElementById(listId);
 
@@ -235,6 +240,7 @@ function toggleList(listId) {
     list.style.maxHeight = "0";
   }
 }
+
 window.addEventListener("scroll", function () {
   var header = document.getElementById("header");
 
@@ -245,18 +251,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-// layout 
 document.addEventListener('DOMContentLoaded', function () {
-  const menuIcon = document.getElementById('menuIcon');
   const menuClose = document.getElementById('menuClose');
   const bottomOverlay = document.getElementById('bottom-overlay');
   const sideMenu = document.getElementById('menu');
-  const body = document.body;
-
-  menuIcon.addEventListener('click', function () {
-    body.style.overflow = 'hidden'; 
-  });
 
   menuClose.addEventListener('click', function () {
     body.style.overflow = 'auto'; 
@@ -269,6 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 // copyright year
 var date = new Date();
 var year = date.getFullYear();
@@ -276,3 +275,22 @@ var copyrightcontent = "© " + year + " All rights reserved";
 document.getElementById("copyright").innerHTML = copyrightcontent;
 
 
+// works-slider
+var swiper = new Swiper("#laminate-slider .mySwiper", {
+  loop: true,
+  pagination: {
+    el: "#laminate-slider .swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+});
+
+swiper.on("paginationClick", function (swiper, event) {
+  var clickedBulletIndex = Array.from(swiper.pagination.bullets).indexOf(
+    event.target
+  );
+  swiper.slideTo(clickedBulletIndex);
+});

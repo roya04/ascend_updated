@@ -456,11 +456,11 @@
 
 @media (max-width: 576px) {
   #home-first-slider {
-    height: 30vh;
+    height: 70vh;
   }
   #home-first-slider .swiper .swiper-slide p {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 30px;
+    line-height: 50px;
   }
   #home-about {
     padding-top: 50px;
@@ -967,30 +967,43 @@
   background-size: cover;
 }
 
-.initial {
-  width: 100%;
-  height: 20vh;
-  background-image: url(../assets/worksInitial.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+#laminate-slider {
+  height: 70vh;
 }
-.initial .overlay {
+#laminate-slider .swiper {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.initial .overlay h1 {
-  font-size: 24px;
-  margin: 0;
+#laminate-slider .swiper .swiper-slide {
+  position: relative;
+  text-align: center;
+}
+#laminate-slider .swiper .swiper-slide .laminate-content {
+  top: 50%;
+  font-weight: 700;
+  color: rgb(173, 18, 38);
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+}
+#laminate-slider .swiper .swiper-slide .laminate-content .mini-content {
+  font-size: 20px;
+}
+#laminate-slider .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#laminate-slider .swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+}
+#laminate-slider .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: rgb(173, 18, 38);
 }
 
 .gallery {
@@ -1015,7 +1028,7 @@
   padding: 5px 10px;
   background-color: white;
   border-color: white;
-  color: #EB8137;
+  color: #eb8137;
 }
 .gallery .box:nth-child(1) {
   grid-area: a;
