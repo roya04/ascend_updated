@@ -456,11 +456,11 @@
 
 @media (max-width: 576px) {
   #home-first-slider {
-    height: 70vh;
+    height: 50vh;
   }
   #home-first-slider .swiper .swiper-slide p {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 40px;
   }
   #home-about {
     padding-top: 50px;
@@ -968,7 +968,7 @@
 }
 
 #laminate-slider {
-  height: 70vh;
+  height: 50vh;
 }
 #laminate-slider .swiper {
   width: 100%;
@@ -1687,7 +1687,7 @@ header .side-header #menuIcon {
 header .side-header #menu {
   background-color: white;
   width: 100%;
-  height: 70%;
+  height: 80%;
   position: fixed;
   top: -100%;
   left: 0;
