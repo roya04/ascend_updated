@@ -269,4 +269,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// copyright year
+var date = new Date();
+var year = date.getFullYear();
+var copyrightcontent = "© " + year + " All rights reserved";
+document.getElementById("copyright").innerHTML = copyrightcontent;
+
 
