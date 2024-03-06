@@ -275,7 +275,7 @@ var copyrightcontent = "© " + year + " All rights reserved";
 document.getElementById("copyright").innerHTML = copyrightcontent;
 
 
-// works-slider
+// products-slider
 var swiper = new Swiper("#laminate-slider .mySwiper", {
   loop: true,
   pagination: {
