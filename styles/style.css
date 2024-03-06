@@ -520,6 +520,9 @@
   #home-selected-projects .swiper .swiper-wrapper .swiper-slide .top {
     display: none;
   }
+  #home-partners {
+    padding-top: 0;
+  }
   #home-partners .section-title {
     font-size: 30px;
   }

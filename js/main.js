@@ -244,3 +244,15 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+
+
+// layout 
+document.addEventListener('DOMContentLoaded', function () {
+  const bottomOverlay = document.getElementById('bottom-overlay');
+  const sideMenu = document.getElementById('menu');
+
+  bottomOverlay.addEventListener('click', function () {
+      sideMenu.classList.remove('active');
+      bottomOverlay.classList.remove('active');
+  });
+});
