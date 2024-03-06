@@ -456,7 +456,7 @@
 
 @media (max-width: 576px) {
   #home-first-slider {
-    height: 50vh;
+    height: 60vh;
   }
   #home-first-slider .swiper .swiper-slide p {
     font-size: 30px;
@@ -968,7 +968,7 @@
 }
 
 #laminate-slider {
-  height: 50vh;
+  height: 60vh;
 }
 #laminate-slider .swiper {
   width: 100%;
