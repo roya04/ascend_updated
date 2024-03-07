@@ -268,6 +268,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
 // copyright year
 var date = new Date();
 var year = date.getFullYear();
